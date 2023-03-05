@@ -26,11 +26,43 @@ p {
   padding: 0;
 }
 
+p {
+  font-weight: 500;
+}
+
 li {
   list-style: none;
+}
+
+.country-list__item {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 12px;
+}
+
+.country-list__item:not(:last-child) {
   margin-bottom: 12px;
+}
+
+.country-info,
+.country-list {
+  padding: 12px 0 0 12px;
+}
+
+.country-info__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.country-info__name,
+.country-info__text {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.country-info__text {
+  margin-right: 8px;
+  font-size: 20px;
 }
